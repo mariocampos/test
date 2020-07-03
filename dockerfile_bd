@@ -1,0 +1,10 @@
+
+FROM postgres
+ 
+MAINTAINER mario
+ 
+ENV POSTGRES_PASSWORD test_prueba
+ 
+ENV POSTGRES_DB prueba
+ 
+ADD ddl.sql /docker-entrypoint-initdb.d/ddl.sql
